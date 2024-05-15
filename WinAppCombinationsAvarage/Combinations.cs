@@ -4,15 +4,11 @@ namespace WinAppCombinationsAvarage
 {
     internal class Combinations
     {
-        private List<double[]> combinations;
-        public int N { get; private set; }
-        public int K { get; } = 4;
+        public List<double[]> combinations;
 
-        public Combinations(double[] inputData)
-        {
-            combinations = new List<double[]>();
-            N = inputData.Length;
-        }
+        public Combinations() => combinations = new List<double[]>();
+        public int N { get; set; }
+        public int K { get; set; }
 
         public void GenerateCombinations(double[] inputData, int n, int k, List<double> currentCombination, int start)
         {
@@ -29,5 +25,7 @@ namespace WinAppCombinationsAvarage
                 GenerateCombinations(inputData, n, k, newCombination, i + 1);
             }
         }
+
+
     }
 }
