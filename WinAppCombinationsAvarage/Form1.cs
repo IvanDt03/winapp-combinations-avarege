@@ -7,16 +7,15 @@ namespace WinAppCombinationsAvarage
         {
             InitializeComponent();
 
-            // DGV.Rows[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
-
+            
             dataAvarage.Columns.Add("№", "№");
-            dataAvarage.Columns["№"].Width = 50;
-
-            dataAvarage.Columns.Add("Combinations", "Combinations");
-            dataAvarage.Columns["Combinations"].Width = 230;
+            dataAvarage.Columns["№"].ReadOnly = false;
+            //dataAvarage.Columns["№"].
 
             dataAvarage.Columns.Add("Average value", "Average value");
-            dataAvarage.Columns["Average value"].Width = 150;
+            dataAvarage.Columns["Average value"].ReadOnly = false;
+
+            //dataAvarage.Columns["Average value"].Width = 150;
 
             dataAvarage.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataAvarage.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -29,31 +28,35 @@ namespace WinAppCombinationsAvarage
 
         private void BtnCalculate_Click(object? sender, EventArgs e)
         {
-            
-
-            txtBoxK.BackColor = Color.White;
-            txtBoxN.BackColor = Color.White;
+            // Провека корректности цвета и входных данных N и K
+            ColorChange(txtBoxN, txtBoxK);
             if (!ParseTextBox()) return;
+            // Конец
 
-            if (!TryParseData(txtBoxInputData.Text)) { lblError.Visible = true; return; }
+            // Конвертация входных данных из строки в массив типа double
+            if (!TryParseData(txtBoxInputData.Text, out double[] imputData)) 
+            { 
+                lblError.Visible = true; 
+                return; 
+            }
             else lblError.Visible = false;
+            // Конец
 
-
-            double[] imputData = ParseData(txtBoxInputData.Text);
             listCombination.N = int.Parse(txtBoxN.Text);
             listCombination.K = int.Parse(txtBoxK.Text);
 
             listCombination.GenerateCombinations(imputData, listCombination.N, listCombination.K, new List<double>(), 0);
 
-            int row = 0;
-            foreach (var combination in listCombination.combinations)
-            {
-                dataAvarage.Rows.Add();
-                dataAvarage["№", row].Value = row + 1;
-                dataAvarage["Combinations", row].Value = string.Join(',', listCombination.combinations[row]);
-                dataAvarage["Average value", row].Value = listCombination.combinations[row].Average();
-                row++;
-            }
+            PrintData();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtBoxInputData.Clear();
+            dataAvarage.Rows.Clear();
+            listCombination.combinations.Clear();
+            for (int i = dataAvarage.Columns["№"].Index + 1; i <= listCombination.K; ++i)
+                dataAvarage.Columns.Remove($"{i}");
         }
 
 
@@ -65,18 +68,22 @@ namespace WinAppCombinationsAvarage
                 if (txtBoxN.Text == string.Empty || int.TryParse(txtBoxK.Text, out _)) txtBoxN.BackColor = Color.IndianRed;
                 return false;
             }
+
             return true;
         }
-        private double[] ParseData(string data)
+        private void ColorChange(TextBox txtBoxN, TextBox txtBoxK)
         {
-            return data.Split(' ').Select(x => double.Parse(x)).ToArray();
+            if (txtBoxN.BackColor == Color.IndianRed) txtBoxN.BackColor = Color.White;
+            if (txtBoxK.BackColor == Color.IndianRed) txtBoxK.BackColor = Color.White;
         }
-        private bool TryParseData(string data)
+        private bool TryParseData(string textData, out double[] data)
         {
-            data = data.Trim();
-            if (data == string.Empty) return false;
+            data = Array.Empty<double>();
 
-            string[] strsData = data.Split(' ');
+            textData = textData.Trim();
+            if (textData == string.Empty) return false;
+
+            string[] strsData = textData.Split(' ');
             foreach (var str in strsData)
             {
                 if (!double.TryParse(str, out _))
@@ -84,13 +91,46 @@ namespace WinAppCombinationsAvarage
             }
             if (strsData.Length != int.Parse(txtBoxN.Text)) return false;
 
+            data = strsData.Select(x => double.Parse(x)).ToArray();
             return true;
         }
-        private void btnClear_Click(object sender, EventArgs e)
+        private void PrintData()
         {
-            txtBoxInputData.Clear();
-            dataAvarage.Rows.Clear();
-            listCombination.combinations.Clear();
+            CreateColumns();
+
+            for (int numberRow = 0; numberRow < listCombination.combinations.Count; ++numberRow)
+            {
+                dataAvarage.Rows.Add();
+                dataAvarage["№", numberRow].Value = numberRow + 1;
+                FillRowCombination(numberRow);
+                dataAvarage["Average value", numberRow].Value = listCombination.combinations[numberRow].Average();
+            }
+            
         }
+        private void FillRowCombination(int numberRow)
+        {
+            for (int i = dataAvarage.Columns["№"].Index + 1, k = 0; i <= listCombination.K; ++i, ++k)
+                dataAvarage[$"{i}", numberRow].Value = listCombination.combinations[numberRow][k];
+        }
+        private void CreateColumns()
+        {
+            for (int i = dataAvarage.Columns["№"].Index + 1; i <= listCombination.K; ++i)
+            {
+                dataAvarage.Columns.Insert(i, new DataGridViewColumn()
+                {
+                    Name = $"{i}",
+                    HeaderText = "",
+                    ValueType = typeof(double),
+                    CellTemplate = new DataGridViewTextBoxCell(),
+                    ReadOnly = false,
+                });
+                dataAvarage.EnableHeadersVisualStyles = false;
+                dataAvarage.Columns[$"{i}"].HeaderCell.Style.BackColor = Color.Black;
+            }
+        }
+
+        
     }
+
+    
 }
