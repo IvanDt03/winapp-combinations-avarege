@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\",
+  "WorkspaceRootPath": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\winappcombinationsavarage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|c:\\users\\vanya\\desktop\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\fortimur\\winapp-combinations-avarege\\winappcombinationsavarage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|solutionrelative:winappcombinationsavarage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\winappcombinationsavarage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|solutionrelative:winappcombinationsavarage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\winappcombinationsavarage\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\winappcombinationsavarage\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|solutionrelative:winappcombinationsavarage\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|c:\\users\\vanya\\desktop\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\winappcombinationsavarage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\winappcombinationsavarage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|solutionrelative:winappcombinationsavarage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\winappcombinationsavarage\\combinations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\winappcombinationsavarage\\combinations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|solutionrelative:winappcombinationsavarage\\combinations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\winappcombinationsavarage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04755A53-007C-4ADC-977E-BF453D3E52A9}|WinAppCombinationsAvarage\\WinAppCombinationsAvarage.csproj|solutionrelative:winappcombinationsavarage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,35 +36,35 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Form1.cs",
               "RelativeDocumentMoniker": "WinAppCombinationsAvarage\\Form1.cs",
-              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Form1.cs",
+              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Form1.cs",
               "RelativeToolTip": "WinAppCombinationsAvarage\\Form1.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwIMAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T17:57:56.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WinAppCombinationsAvarage\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Form1.Designer.cs",
               "RelativeToolTip": "WinAppCombinationsAvarage\\Form1.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAYwJ8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T17:46:35.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Form1.cs",
               "RelativeDocumentMoniker": "WinAppCombinationsAvarage\\Form1.cs",
-              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "WinAppCombinationsAvarage\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T17:17:51.395Z",
@@ -73,26 +73,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Combinations.cs",
-              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Combinations.cs",
-              "RelativeDocumentMoniker": "WinAppCombinationsAvarage\\Combinations.cs",
-              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Combinations.cs",
-              "RelativeToolTip": "WinAppCombinationsAvarage\\Combinations.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBUAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T17:35:05.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Program.cs",
               "RelativeDocumentMoniker": "WinAppCombinationsAvarage\\Program.cs",
-              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\WinAppCombinationsAvarage\\Program.cs",
+              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Program.cs",
               "RelativeToolTip": "WinAppCombinationsAvarage\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T17:23:12.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Combinations.cs",
+              "DocumentMoniker": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Combinations.cs",
+              "RelativeDocumentMoniker": "WinAppCombinationsAvarage\\Combinations.cs",
+              "ToolTip": "C:\\Users\\vanya\\Desktop\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B C#\\ForTimur\\winapp-combinations-avarege\\WinAppCombinationsAvarage\\Combinations.cs",
+              "RelativeToolTip": "WinAppCombinationsAvarage\\Combinations.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T17:35:05.781Z",
               "EditorCaption": ""
             }
           ]

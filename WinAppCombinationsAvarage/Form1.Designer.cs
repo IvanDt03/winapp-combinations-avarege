@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtBoxInputData = new TextBox();
             lblImputData = new Label();
             dataAvarage = new DataGridView();
             lblError = new Label();
@@ -38,16 +37,9 @@
             txtBoxN = new TextBox();
             txtBoxK = new TextBox();
             btnClear = new Button();
+            txtBoxInputData = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataAvarage).BeginInit();
             SuspendLayout();
-            // 
-            // txtBoxInputData
-            // 
-            txtBoxInputData.Location = new Point(2, 106);
-            txtBoxInputData.Name = "txtBoxInputData";
-            txtBoxInputData.Size = new Size(329, 27);
-            txtBoxInputData.TabIndex = 0;
-            txtBoxInputData.TextChanged += TxtBoxInputData_TextChanged;
             // 
             // lblImputData
             // 
@@ -61,17 +53,17 @@
             // dataAvarage
             // 
             dataAvarage.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataAvarage.Location = new Point(337, -1);
+            dataAvarage.Location = new Point(374, -1);
             dataAvarage.Name = "dataAvarage";
             dataAvarage.RowHeadersWidth = 51;
-            dataAvarage.Size = new Size(519, 478);
+            dataAvarage.Size = new Size(675, 550);
             dataAvarage.TabIndex = 2;
             // 
             // lblError
             // 
             lblError.AutoSize = true;
             lblError.ForeColor = Color.Red;
-            lblError.Location = new Point(2, 136);
+            lblError.Location = new Point(7, 141);
             lblError.Name = "lblError";
             lblError.Size = new Size(142, 20);
             lblError.TabIndex = 3;
@@ -79,7 +71,7 @@
             // 
             // btnCalculate
             // 
-            btnCalculate.Location = new Point(212, 139);
+            btnCalculate.Location = new Point(249, 144);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(119, 49);
             btnCalculate.TabIndex = 4;
@@ -121,19 +113,28 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(12, 438);
+            btnClear.Location = new Point(249, 199);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(113, 39);
+            btnClear.Size = new Size(119, 39);
             btnClear.TabIndex = 9;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
             btnClear.Click += btnClear_Click;
             // 
+            // txtBoxInputData
+            // 
+            txtBoxInputData.Location = new Point(7, 111);
+            txtBoxInputData.Name = "txtBoxInputData";
+            txtBoxInputData.Size = new Size(361, 27);
+            txtBoxInputData.TabIndex = 10;
+            txtBoxInputData.TextChanged += TxtBoxInputData_TextChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1037, 580);
+            ClientSize = new Size(1061, 561);
+            Controls.Add(txtBoxInputData);
             Controls.Add(btnClear);
             Controls.Add(txtBoxK);
             Controls.Add(txtBoxN);
@@ -143,18 +144,14 @@
             Controls.Add(lblError);
             Controls.Add(dataAvarage);
             Controls.Add(lblImputData);
-            Controls.Add(txtBoxInputData);
             MinimumSize = new Size(818, 497);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Calculate Average";
             ((System.ComponentModel.ISupportInitialize)dataAvarage).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
-
         #endregion
-
-        private TextBox txtBoxInputData;
         private Label lblImputData;
         private DataGridView dataAvarage;
         private Label lblError;
@@ -164,5 +161,6 @@
         private TextBox txtBoxN;
         private TextBox txtBoxK;
         private Button btnClear;
+        private TextBox txtBoxInputData;
     }
 }

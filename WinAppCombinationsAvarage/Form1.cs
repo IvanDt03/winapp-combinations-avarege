@@ -9,11 +9,11 @@ namespace WinAppCombinationsAvarage
 
             
             dataAvarage.Columns.Add("№", "№");
-            dataAvarage.Columns["№"].ReadOnly = false;
+            dataAvarage.Columns["№"].ReadOnly = true;
             //dataAvarage.Columns["№"].
 
             dataAvarage.Columns.Add("Average value", "Average value");
-            dataAvarage.Columns["Average value"].ReadOnly = false;
+            dataAvarage.Columns["Average value"].ReadOnly = true;
 
             //dataAvarage.Columns["Average value"].Width = 150;
 
@@ -42,6 +42,8 @@ namespace WinAppCombinationsAvarage
             else lblError.Visible = false;
             // Конец
 
+            if (listCombination.combinations is not null) Clear();
+
             listCombination.N = int.Parse(txtBoxN.Text);
             listCombination.K = int.Parse(txtBoxK.Text);
 
@@ -53,13 +55,22 @@ namespace WinAppCombinationsAvarage
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtBoxInputData.Clear();
+            Clear();
+        }
+        private void Clear()
+        {
             dataAvarage.Rows.Clear();
             listCombination.combinations.Clear();
-            for (int i = dataAvarage.Columns["№"].Index + 1; i <= listCombination.K; ++i)
-                dataAvarage.Columns.Remove($"{i}");
+            RemoveColumns();
         }
-
-
+        private void RemoveColumns()
+        {
+            for (int i = dataAvarage.Columns["№"].Index + 1; i <= listCombination.K; ++i)
+            {
+                if (dataAvarage.Columns.Contains($"{i}"))
+                    dataAvarage.Columns.Remove($"{i}");
+            }
+        }
         private bool ParseTextBox()
         {
             if (txtBoxN.Text == string.Empty || txtBoxK.Text == string.Empty || !int.TryParse(txtBoxN.Text, out _) || !int.TryParse(txtBoxK.Text, out _))
@@ -83,7 +94,7 @@ namespace WinAppCombinationsAvarage
             textData = textData.Trim();
             if (textData == string.Empty) return false;
 
-            string[] strsData = textData.Split(' ');
+            string[] strsData = textData.Split(' ', '\t', '\n');
             foreach (var str in strsData)
             {
                 if (!double.TryParse(str, out _))
@@ -103,7 +114,7 @@ namespace WinAppCombinationsAvarage
                 dataAvarage.Rows.Add();
                 dataAvarage["№", numberRow].Value = numberRow + 1;
                 FillRowCombination(numberRow);
-                dataAvarage["Average value", numberRow].Value = listCombination.combinations[numberRow].Average();
+                dataAvarage["Average value", numberRow].Value = Math.Round(listCombination.combinations[numberRow].Average(), 3);
             }
             
         }
@@ -122,14 +133,12 @@ namespace WinAppCombinationsAvarage
                     HeaderText = "",
                     ValueType = typeof(double),
                     CellTemplate = new DataGridViewTextBoxCell(),
-                    ReadOnly = false,
+                    ReadOnly = true,
                 });
                 dataAvarage.EnableHeadersVisualStyles = false;
                 dataAvarage.Columns[$"{i}"].HeaderCell.Style.BackColor = Color.Black;
             }
         }
-
-        
     }
 
     
