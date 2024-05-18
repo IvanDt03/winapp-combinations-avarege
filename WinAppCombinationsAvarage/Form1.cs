@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace WinAppCombinationsAvarage
 {
     public partial class Form1 : Form
@@ -7,15 +9,15 @@ namespace WinAppCombinationsAvarage
         {
             InitializeComponent();
 
-            
+
             dataAvarage.Columns.Add("№", "№");
             dataAvarage.Columns["№"].ReadOnly = true;
-            //dataAvarage.Columns["№"].
 
             dataAvarage.Columns.Add("Average value", "Average value");
             dataAvarage.Columns["Average value"].ReadOnly = true;
 
-            //dataAvarage.Columns["Average value"].Width = 150;
+            dataAvarage.Columns.Add("Standard deviation", "Standard deviation");
+            dataAvarage.Columns["Standard deviation"].ReadOnly = true;
 
             dataAvarage.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataAvarage.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -24,7 +26,7 @@ namespace WinAppCombinationsAvarage
             btnCalculate.Visible = false;
         }
 
-        private void TxtBoxInputData_TextChanged(object? sender, EventArgs e) =>  btnCalculate.Visible = true;
+        private void TxtBoxInputData_TextChanged(object? sender, EventArgs e) => btnCalculate.Visible = true;
 
         private void BtnCalculate_Click(object? sender, EventArgs e)
         {
@@ -34,10 +36,10 @@ namespace WinAppCombinationsAvarage
             // Конец
 
             // Конвертация входных данных из строки в массив типа double
-            if (!TryParseData(txtBoxInputData.Text, out double[] imputData)) 
-            { 
-                lblError.Visible = true; 
-                return; 
+            if (!TryParseData(txtBoxInputData.Text, out double[] imputData))
+            {
+                lblError.Visible = true;
+                return;
             }
             else lblError.Visible = false;
             // Конец
@@ -115,8 +117,8 @@ namespace WinAppCombinationsAvarage
                 dataAvarage["№", numberRow].Value = numberRow + 1;
                 FillRowCombination(numberRow);
                 dataAvarage["Average value", numberRow].Value = Math.Round(listCombination.combinations[numberRow].Average(), 3);
+                dataAvarage["Standard deviation", numberRow].Value = listCombination.StandardDeviation(numberRow);
             }
-            
         }
         private void FillRowCombination(int numberRow)
         {
@@ -141,5 +143,5 @@ namespace WinAppCombinationsAvarage
         }
     }
 
-    
+
 }

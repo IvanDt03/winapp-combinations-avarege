@@ -26,6 +26,12 @@ namespace WinAppCombinationsAvarage
             }
         }
 
+        public double StandardDeviation(int indexCombination)
+        {
+            double average  = combinations[indexCombination].Average();
+            double sum = combinations[indexCombination].Sum(x => Math.Pow(x - average, 2));
 
+            return Math.Round(Math.Sqrt(sum / (combinations[indexCombination].Length - 1)), 3);
+        }
     }
 }

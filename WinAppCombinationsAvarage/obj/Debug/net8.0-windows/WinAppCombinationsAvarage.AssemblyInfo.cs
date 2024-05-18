@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinAppCombinationsAvarage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8f1f5b7f6ef0e5e7d3d9ba25065aa854c14fa11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8035faee451a6a4595411e5a4638531aac74835")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinAppCombinationsAvarage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinAppCombinationsAvarage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
