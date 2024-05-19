@@ -57,13 +57,15 @@
             dataAvarage.AllowUserToDeleteRows = false;
             dataAvarage.AllowUserToResizeColumns = false;
             dataAvarage.AllowUserToResizeRows = false;
+            dataAvarage.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataAvarage.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataAvarage.BackgroundColor = Color.DimGray;
             dataAvarage.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataAvarage.Location = new Point(386, 1);
+            dataAvarage.Location = new Point(386, 2);
             dataAvarage.Name = "dataAvarage";
             dataAvarage.ReadOnly = true;
             dataAvarage.RowHeadersWidth = 51;
-            dataAvarage.Size = new Size(675, 560);
+            dataAvarage.Size = new Size(675, 571);
             dataAvarage.TabIndex = 2;
             // 
             // lblError
@@ -145,9 +147,10 @@
             // 
             // author
             // 
+            author.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             author.AutoSize = true;
             author.Font = new Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            author.Location = new Point(2, 519);
+            author.Location = new Point(2, 534);
             author.Name = "author";
             author.Size = new Size(184, 36);
             author.TabIndex = 11;
@@ -157,8 +160,9 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.CornflowerBlue;
-            ClientSize = new Size(1061, 561);
+            ClientSize = new Size(1061, 576);
             Controls.Add(author);
             Controls.Add(txtBoxInputData);
             Controls.Add(btnClear);
@@ -170,9 +174,9 @@
             Controls.Add(lblError);
             Controls.Add(dataAvarage);
             Controls.Add(lblImputData);
-            MaximumSize = new Size(1079, 608);
             MinimumSize = new Size(1079, 608);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculate Average";
             ((System.ComponentModel.ISupportInitialize)dataAvarage).EndInit();
             ResumeLayout(false);
